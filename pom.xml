@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.spacetrip.ship</groupId>
+    <artifactId>body</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>3.1.5</spring-boot.version>
+    </properties>
+    <!-- 配置模块 -->
+    <modules>
+        <module>core</module>
+        <module>nuclear-engine</module>
+        <module>tools</module>
+        <module>dao</module>
+        <module>service</module>
+        <module>web</module>
+        <!-- 添加其他模块 -->
+    </modules>
+
+    <!-- 配置构建信息 -->
+    <build>
+        <!-- 配置构建插件 -->
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.0</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source> <!-- 修改为你想要的Java版本 -->
+                    <target>${maven.compiler.target}</target> <!-- 修改为你想要的Java版本 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
