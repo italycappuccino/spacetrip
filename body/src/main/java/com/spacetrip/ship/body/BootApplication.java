@@ -5,7 +5,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with spacetrip.tech.
  */
-package com.spacetrip;
+package com.spacetrip.ship.body;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

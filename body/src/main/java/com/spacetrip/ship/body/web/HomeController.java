@@ -5,7 +5,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with spacetrip.tech.
  */
-package com.spacetrip.web;
+package com.spacetrip.ship.body.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
